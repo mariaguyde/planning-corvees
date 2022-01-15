@@ -1,0 +1,70 @@
+{% extends 'default.twig' %}
+{% block main %}
+    <section id="{{page}}-section">
+        <label for="date"> Choisissez une année </label>
+        <div class="choose-date">
+            <form action="index.php?action=tableau&controller=array" method="POST">
+                <select name="date" id="date"> 
+                    
+                    {% set dYear = 2021 %}
+
+                    {% for dYear in 2021..2040 %}
+                        <option value={{dYear}}> {{dYear}} </option>;
+                    {% endfor %}
+
+                </select>
+                <input type="submit" class="submit-btn" value="choose">
+            </form>
+        </div>
+
+        {% if dates %}
+
+        <form action="index.php?action=validate&controller=array" method="POST">
+
+            <table>
+
+                <tr>
+                    <th> Date </th>
+                    <th> Nom </th>
+                </tr>
+                
+                {% set number = 0 %}
+                {% for date in dates %}
+                        {% if number % 4 == 0 %}
+                            <tr>
+                        {% endif %}
+                                <td> 
+                                    {{date}} 
+                                </td>
+                                <td>
+                                    <select name="dates[{{date}}]">
+                                        {% if names[date] %}
+                                            <option value='{{names[date]}}' data-name="{{names[date]}}" selected="selected"> {{names[date]}} </option>
+                                        {% else %}
+                                            <option value='' selected="selected" disabled> Attribuer </option>
+                                        {% endif %}
+                                        
+                                        {% for user in users %}
+                                            {% if user is not same as names[date] %}
+                                            <option data-name="{{user}}" value="{{user}}"> {{user}}</option>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </select> 
+                                </td>
+                        {% set number = number + 1 %}
+                        {% if number % 4 == 0 %}
+                            </tr>
+                        {% endif %}
+                {% endfor %}
+
+            </table>
+            <div class="validate"> 
+                <button type="submit"> valider le planning </button>
+            </div>
+
+        </form>
+
+        {% endif %}
+
+    </section>
+{% endblock %}

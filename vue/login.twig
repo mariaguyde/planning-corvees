@@ -1,0 +1,19 @@
+{% extends 'default.twig' %}
+{% block main %}
+<section id="{{page}}-section">
+    <h3>Entrez votre adresse mail et votre mot de passe </h3>
+    <form action="index.php?action=formLogin&controller=user" method="POST">
+    <div>
+        <label for="email" >Votre mail</label>
+        <input class="champs" type="email" name="user[email]" placeholder="Mail"/><br>
+    </div>
+    <div>
+        <label for="password" >Votre mot de passe</label>
+        <input class="champs" type="password" name="user[password]" placeholder="Mot de passe"/><br>
+    </div>
+        <input class="submit-btn" type="submit" name="submit" value="Se connecter"/>
+    </form>
+
+    <p>Vous n'avez pas de compte ?<a id="createAccount" href="index.php?action=create&controller=user">Créer un compte</a></p>
+</section>
+{% endblock %}

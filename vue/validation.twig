@@ -1,0 +1,11 @@
+{% extends 'default.twig' %}
+{% block main %}
+    <section id="{{page}}-section">
+    <h3> Vous vous êtes inscrit aux dates suivantes : </h3>
+        <ul>
+        {% for key, user in dates %}
+            <li> {{key}} : {{user}}</li>
+        {% endfor %}
+        </ul>
+    </section>
+{% endblock %}

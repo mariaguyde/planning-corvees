@@ -1,0 +1,8 @@
+<nav>
+    {% for key, link in links %}
+        <a href="./index.php?action={{key}}&controller={{link.ctrl}}" class="no-deco" title="login">
+            <p class="text">{{link.name}}</p>
+        </a>
+    {% endfor %}
+</nav>
+

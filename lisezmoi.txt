@@ -1,0 +1,26 @@
+﻿Compte-rendu Mini-projet Planning Corvées d’épluchage
+
+
+Liste des fonctionnalités développées dans votre livraison et attendues dans le sujet : 
+* Connexion à son compte possible (finalisé) 
+* Accès à un tableau et plannification des corvées d’épluchage possible (finalisé)
+* Mise en valeur des noms des personnes : attribution d’une couleur au hasard pour chaque personne dans le tableau (fiable) 
+* Affichage des statistiques grâce à des requêtes MongoDB (partiel) 
+
+
+Liste des améliorations possibles : 
+* Statistiques "Nombre de semaines vides par année" => gestion des années bissextiles
+* Bloquer le choix d'une même date une fois qu'elle a déjà été attribué à une personne (requête d'update plutôt une requête d'insert)
+* Statistiques "Tranche d'âge qu'on retrouve le plus" à faire grâce à des requêtes MongoDB et non PHP
+* 
+
+Liste des fonctionnalités attendues dans le sujet mais non développées par vous : 
+
+
+
+
+Liste des fonctionnalités ou technologies qui vous sont personnelles : 
+* Utilisation de TWIG pour les vues + reprise du modèle MVC (Model View Controller) vu en cours 
+* Création d’un compte possible (finalisé) 
+* Cryptage des mots de passes des utilisateurs (finalisé)
+* Menu affiché (finalisé)

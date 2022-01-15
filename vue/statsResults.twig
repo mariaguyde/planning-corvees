@@ -1,0 +1,70 @@
+{% extends 'default.twig' %}
+{% block main %}
+<section id="{{page}}-section">
+    <div id="stats">
+        <h3>Statistiques sur les corvées d'épluchage</h3>
+        <!-- Résultats des statistiques -->
+        <!-- Tableau : nombre de semaines pour chaque participant -->
+        <table>
+            <tr>
+                <th>Nom du participant</th>
+                <th>Nombre de semaines de corvées</th>
+            </tr>
+            <!--ligne-->
+             {% for key, number in statsCorvees %}
+            <tr>
+                <th> {{key}} </th>
+                <td> {{number}} semaine(s) </td>
+            </tr>
+            {% endfor %}
+        </table>
+
+
+        <!--Tableau des autres stats-->
+        <h3>Tableau regroupant divers statistiques</h3>
+        <table>
+
+            <tr>
+                <td>Noms des stats</td>
+                <td>Statistiques</td>
+
+            </tr>
+
+            <tr>
+                <td>Personne ayant épluché le plus</td>
+                <td> {{corveeMaxStats}}</td>
+            </tr>
+
+             <tr>
+                <td>Personne ayant épluché le moins</td>
+                <td> {{corveesMoinsStats}}</td>
+            </tr>
+
+            <tr>
+                <td>Genre ayant épluché le plus</td>
+                <td> {{genreStat}} </td>
+            </tr>
+
+            <tr>
+                <td>Tranche d'âge qu'on retrouve le plus</td>
+                <td>{{trancheAgeStat}}</td>
+            </tr>
+
+            <tr>
+                <td>Semaines vides</td>
+                <td>
+                   {% for key, number in semainesVidesStat %}
+
+                        <p> {{key}} :  {{number}}</p>
+                    
+                   {% endfor %}
+
+                </td<>
+            </tr>
+        </table>
+
+    </div>
+
+</section>  
+
+{% endblock %}

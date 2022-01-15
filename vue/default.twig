@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Planning Corvées d'épluchage </title>
+        <link rel="shortcut icon" type="image/jpg" href="src/img/calendar-todo-fill.svg"/>
+        <meta name="viewport" content="width=device-width">
+        <link href="src/css/{{page}}.css" rel="stylesheet" type="text/css">
+        <link href="src/css/common.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    {% include('header.twig') %}
+
+    {% include('nav.twig') %}
+
+    <main>
+        {% block main %}
+        {% endblock %}
+    </main>
+
+    {% include('footer.twig') %}
+
+    </body>
+</html>

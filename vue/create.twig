@@ -1,0 +1,36 @@
+{% extends 'default.twig' %}
+    {% block main %}
+    <section id="create-section">
+        <form action="./index.php?action=formCreate&controller=user" method="POST">
+
+            <label for="input-email">Mail :</label><br/>
+            <input id="input-email" type="email" name="user[email]" placeholder="Mail"/><br>
+
+            <label for="input-password">Mot de passe :</label><br/>
+            <input id="input-password" type="password" name="user[password]"placeholder="Mot de passe"/><br>
+
+            <label for="input-name">Nom :</label><br/>
+            <input id="input-name" type="text" name="user[lastName]"placeholder="Nom"/><br>
+
+            <label for="input-prenom">Prénom :</label><br/>
+            <input id="input-prenom" type="text" name="user[firstName]"placeholder="Prénom"/><br>
+
+            <label for="select-genre">Genre :</label><br/>
+            <select id="select-genre" name="user[gender]">
+                <option value='' selected disabled> Indiquer votre genre </option>
+                <option value="femme"> Femme </option>
+                <option value="homme"> Homme </option>
+                <option value="autre"> Autre </option>
+                <option value="non renseigné"> Non renseigné </option>
+            </select>
+
+            <label for="input-age">Age :</label><br/>
+            <input id="input-age" type="number" name="user[age]"placeholder="Age"/><br>
+
+            <p>
+            <input type="submit" class="submit-btn" value="Créer/Valider">
+            </p>
+            
+        </form>
+    </section>
+    {% endblock %}

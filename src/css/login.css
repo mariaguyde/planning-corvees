@@ -1,0 +1,18 @@
+form {
+    margin : 1em;
+    background-color : #229b9b;
+    padding : 2em;
+    box-shadow : 3px 2px 3px 1px #1b7c7c;
+}
+
+form input{
+    float : right;
+}
+
+form label {
+    padding-right : 1em;
+}
+
+form > * {
+    margin : 1em;
+}

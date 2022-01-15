@@ -1,0 +1,14 @@
+
+ul {
+    padding : 1em;
+    background-color : #229b9b;
+    margin : 1em;
+    box-shadow : 3px 2px 3px 1px #1b7c7c;
+}
+
+ul li {
+    list-style-type : none;
+    padding : 1em;
+    margin : 1em;
+    background-color : rgba(204, 244, 253, 0.8); 
+}

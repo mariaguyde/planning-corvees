@@ -1,0 +1,51 @@
+form {
+    margin :1em;
+}
+
+label {
+    margin-top : 2em;
+}
+
+table, label {
+    background-color : rgba(204, 244, 253, 0.4);
+    color : #243E39;
+    padding : 1em;
+}
+
+    table td{
+        padding : 0.25em 1em;
+    }
+
+    table tr:nth-child(odd) td:nth-child(4n+1){
+        background-color : #53D5C5;
+        box-shadow : 3px 2px 3px 1px #26a494 inset;
+        
+    }
+
+    table tr:nth-child(even) td:nth-child(4n+1){
+        background-color : #27B1B1;
+        box-shadow : 3px 2px 3px 1px #1b7c7c inset;
+        
+    }
+
+    table tr:nth-child(even) td:nth-child(4n+3){
+        background-color : #0AC1E9;
+        box-shadow : 3px 2px 3px 1px #099cbb inset;
+    }
+
+    table tr:nth-child(odd) td:nth-child(4n+3){
+        background-color : #3cd6f7;
+        box-shadow : 3px 2px 3px 1px #0bb1d5 inset;
+    }
+
+.validate, .choose-date {
+    display : flex;
+    justify-content : center;
+    background-color : #229b9b;
+}
+
+.choose-date {
+    padding : 1em;
+    margin : 1em;
+}
+

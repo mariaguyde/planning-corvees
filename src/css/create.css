@@ -1,0 +1,12 @@
+form {
+    margin : 1em;
+    background-color : #229b9b;
+    padding : 2em;
+    box-shadow : 3px 2px 3px 1px #1b7c7c;
+    display : flex;
+    flex-direction : column;
+}
+
+select, input {
+    margin : 1em 0em;
+}

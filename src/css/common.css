@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Dosis:wght@200&display=swap');
+
+header>div {
+    display : flex;
+    align-items : center;
+}
+
+body{
+    background-color : #ddfffa;
+}
+
+section {
+    background: linear-gradient(0.7turn, #90ebd1 20%, rgb(39, 177, 177) 80%, #90ebd1);
+}
+
+* {
+    color : #243E39;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', Arial;
+}
+
+h1 {
+    font-size : 2rem;
+    font-weight : 600;
+    text-align : center;
+    margin-bottom : 0;
+    margin-top : 3rem;
+}
+
+h2 {
+    padding : 0 1rem;
+}
+
+h2, h3 {
+    font-weight : 300;
+}
+
+p, label, li, th {
+    font-family: 'Dosis', sans-serif;
+}
+
+p, th, td {
+    line-height : 1.4rem;
+}
+
+img {
+    width : 12%;
+}
+
+a{
+    padding : 0.25rem;
+    color : #243E39;
+}
+
+nav{
+    display : flex;
+    justify-content : center;
+    background-color : rgb(204, 244, 253);
+}
+
+nav a{
+    margin :1rem;
+    padding : 0.25rem 2rem;
+    color : #034452;
+}
+
+section {
+    display : flex;
+    align-items : center;
+    flex-direction : column;
+}
+
+form label {
+    color : #fff;
+}
+
+select {
+    border : none;
+    background-color : #DFF7F7;
+    padding : 0.5em 1em;
+}
+
+input {
+    padding : 0.5em 1em;
+}
+
+input[type="submit"], button {
+    background : linear-gradient(to left, rgba(204, 244, 253, 0.9), rgba(204, 244, 253, 0.7) 75%);
+    color : #06778e;
+    margin : 1em;
+    padding : 1em 2em;
+    font-size : 1em;
+    border : none;
+    border-radius : 3px;
+    box-shadow: 3px 2px 3px 1px #166969;
+}
+
+input[type="submit"]:hover, button:hover {
+    animation : 0.5s linear changeButton;
+    animation-fill-mode: forwards;
+}
+
+@keyframes changeButton {
+    from { 
+        box-shadow : 60px 0px 0px 0px inset transparent, -60px 0px 0px 0px inset transparent, 3px 2px 3px 1px #166969;
+    }
+
+    to   {
+        box-shadow: -60px 0px 60px 0px inset #90ebd1, 60px 0px 60px 0px inset transparent, 3px 2px 3px 1px #166969;
+    }
+}
+
+footer {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    background-color : #229b9b;
+    padding : 2em;
+}
+
+

@@ -1,0 +1,14 @@
+#unauthorized-section{
+    display: flex;
+    justify-content: center;
+    padding: 3% 0;
+}
+
+#unauthorized-section p {
+    font-weight: bolder;
+}
+
+#unauthorized_padlockImg{
+    margin-bottom: 2%;
+    width: 7%; 
+}

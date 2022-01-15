@@ -1,0 +1,15 @@
+table {
+background-color : rgba(204, 244, 253, 0.4);
+padding : 1rem;
+margin : 1rem;
+}
+
+table tr:nth-child(1n+2) {
+    background-color: #fff;
+    box-shadow: 3px 2px 3px 1px #43cfc1;
+}
+
+table td, table th {
+    padding: 0.5em 1em;
+}
+
